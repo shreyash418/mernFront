@@ -15,7 +15,7 @@ export default function Home() {
 
   const loadData = async ()=>{
     let response = await fetch("https://mernbackend-piob.onrender.com/api/foodData",{
-      mode: 'no-cors' ,
+     
       method:"POST",
       headers: {
         'content-Type': 'application/json'
