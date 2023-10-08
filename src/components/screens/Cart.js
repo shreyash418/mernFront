@@ -15,7 +15,7 @@ export const Cart = () => {
   }
   const handleCheckOut = async()=>{
     let userEmail = localStorage.getItem("userEmail");
-    let response = await fetch("https://mernbackend-piob.onrender.com/api/orderData",{ mode: 'no-cors' }{
+    let response = await fetch("https://mernbackend-piob.onrender.com/api/orderData",{
       method:'POST',
       headers:{
         'Content-Type':'application/json'
